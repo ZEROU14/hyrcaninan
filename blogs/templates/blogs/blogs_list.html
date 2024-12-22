@@ -1,0 +1,73 @@
+{% extends '_base.html' %}
+{% load i18n %}
+{% load jalali_tags %}
+
+{% block page_title  %}Blog List{% endblock page_title  %}
+
+
+{% block content %}
+
+{% include "header.html" %}
+<div class="page-title">
+    <div class="themeflat-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading">
+                    <h1 class="title">{% trans "Blogs" %}</h1>
+                </div><!-- /.page-title-captions -->
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="{% url "home" %}"> {% trans "Homepage" %} </a></li>
+                        <li> <i class="icon-Arrow---Right-2"></i></li>
+                       
+                        <li><a>{% trans " Latest News" %}</a></li>
+                    </ul>
+                </div><!-- /.breadcrumbs -->
+
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.page-title -->
+
+    <!-- Blog Posts -->
+    <section class="main-content blog-posts">
+        <div class="themeflat-container">
+            <div class="row">
+                <div class="col-md-14 col-lg-9 col-xl-9 col-xxl-9 widget-blog-content">
+                    <div class="post-wrap">
+                        {% for foo in blogs %}
+                        <article class="entry format-standard wow fadeInUp animated">
+                            <div class="feature-post">
+                                <img src="{{foo.title_image.url}}" alt="image">
+                            </div><!-- /.feature-post -->
+
+                            <div style="text-align: right;" class="main-post">
+                                <div class="tag">
+                                    <ul>
+                                        <li>
+                                            <a href="blog-single.html">{{foo.tag}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h2 style="text-align: right;" class="entry-title"><a href="{{foo.get_absolute_url}}">{{foo.title}}</a>
+                                </h2>
+                                <div style="text-align: right;" class="entry-meta">
+                                    <span class="author line"><a href="blog-single.html">نویسنده :‌تیم هیرکانی</a></span>
+                                    <span class="date line"><a href="blog-single.html">{{foo.datetime_created|to_jalali:'%Y/%M/%d'}}</a></span>
+                                 
+                                     
+                                    </span>
+                                </div>
+                                <a class="more-link" href="{{foo.get_absolute_url}}">{% trans "Read More" %} </a>
+                                <!-- /.entry-meta -->
+                            </div><!-- /.main-post -->
+                        </article>
+                        {% endfor %}
+                    </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+
+
+{% endblock content %}

@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-23 19:36+0330\n"
+"PO-Revision-Date: 2024-11-23 19:21+0330\n"
+"Last-Translator:   <herogame803@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: templates/_base.html:99
+msgid ""
+"Welcome to our running community! Discover the joy of running, connect with "
+"fellow enthusiasts, and unlock your full potential with our expert resources "
+"and training programs."
+msgstr ""
+"به جامعه دویدن ما خوش آمدید! لذت دویدن را کشف کنید، با علاقه‌مندان دیگر "
+"ارتباط برقرار کنید و با منابع و برنامه‌های آموزشی ما توانمندی خود را به "
+"حداکثر برسانید."
+
+#: templates/_base.html:118
+msgid "Blogs"
+msgstr "بلاگ ها"
+
+#: templates/_base.html:119
+msgid "Events"
+msgstr "مسابقات"
+
+#: templates/_base.html:120
+msgid " About Us"
+msgstr "درباره ما"
+
+#: templates/_base.html:131
+msgid " Need help?"
+msgstr "کمک میخوای ؟"
+
+#: templates/aboutus_.html:25
+msgid "Welcome to runclub!"
+msgstr "به باشگاه دوندگی ما خوش آمدید"
+
+#: templates/aboutus_.html:26
+msgid "Zunzo - Your Ultimate Running Community"
+msgstr "هیرکانی ٬ انجمن دوندگی شما"
+
+#: templates/header.html:25
+msgid "Home page"
+msgstr "خانه"
+
+#: templates/header.html:28
+msgid "About us"
+msgstr "درباره ما"
+
+#: templates/header.html:29
+msgid "Our Events"
+msgstr "مسابقات"
+
+#: templates/header.html:32
+msgid "Latest Blogs"
+msgstr "بلاگ"
+
+#: templates/header.html:34
+msgid "Shop"
+msgstr "فروشگاه"
+
+#: templates/header.html:36
+msgid "Comming Soon..."
+msgstr "به زودی...."
+
+#: templates/header.html:39
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+#: templates/home.html:30
+msgid "Our Running competitions "
+msgstr "مسابقات ما"
+
+#: templates/home.html:31
+msgid ""
+"We are always trying to have cool running competition with the best quality "
+"for our ruuners "
+msgstr ""
+"ما همیشه در تلاشیم که برای دوندگان خودمون مسابقات باحال و پر چالش برگذار "
+"کنیم که \n"
+"خودشون رو به چالش بکشند  و  سطح خودشون رو بیشتر  کنند و در حرفه دوندگی "
+"پیشرفت کنند"
+
+#: templates/home.html:33
+msgid "List of Running Competition"
+msgstr "مسابقات ما"
+
+#: templates/home.html:37
+msgid "New Event"
+msgstr "مسابقات"
+
+#: templates/home.html:62 templates/home.html:127 templates/home.html:407
+msgid "Start at"
+msgstr "شروع از"
+
+#: templates/home.html:93
+msgid "Run with Passion and Purpose"
+msgstr "با اشتیاق و هدف بدوید"
+
+#: templates/home.html:95
+msgid ""
+"The platform that turns aspirations accomplishments. join now and unleash "
+"your potential in the world of fitness andwellness"
+msgstr ""
+"پلت فرمی که آرزوها را به دستاوردها تبدیل می کند. حالا عضو گروه ما شوید و "
+"پتانسیل خود را در دنیای تناسب اندام و تندرستی آزاد کنید"
+
+#: templates/home.html:97
+msgid "join our club"
+msgstr "به زودی.."
+
+#: templates/home.html:101 templates/home.html:166
+msgid "new Event"
+msgstr "مسابقات"
+
+#: templates/home.html:158
+msgid "Find Your Pace, Find Your Tribe"
+msgstr "سرعت خود را پیدا کنید، قبیله خود را پیدا کنید"
+
+#: templates/home.html:160
+msgid ""
+"The platform that turns aspirations into accomplishments. join now and "
+"unleash your potential in the world of fitness and wellness."
+msgstr ""
+"گروه دوندگی هیرکانی همیشه در تلاش است که سطح مسابقات دوندگی کشور را بالاببرد "
+"و حتی مسابقات بین المللی در سطح کشور برگذار کند"
+
+#: templates/home.html:162
+msgid "Join our club"
+msgstr "به زودی.."
+
+#: templates/home.html:192
+msgid "Start"
+msgstr "شروع از"
+
+#: templates/home.html:278
+msgid "Be healthy"
+msgstr "سلامت باشید"
+
+#: templates/home.html:281
+msgid "Improve your physical fitness and well-being through regular running."
+msgstr "با دویدن منظم، آمادگی جسمانی و تندرستی خود را بهبود بخشید."
+
+#: templates/home.html:291
+msgid "Feel Free"
+msgstr "احساس آزادی کنید"
+
+#: templates/home.html:294
+msgid "Experience the freedom of running outdoors, and challenging yourself."
+msgstr "آزادی دویدن در فضای باز و به چالش کشیدن خود را تجربه کنید."
+
+#: templates/home.html:318
+msgid "Be one of us"
+msgstr "یکی از ما باشید"
+
+#: templates/home.html:321
+msgid ""
+"Join a supportive community of like-minded runners and achieving goals "
+"together."
+msgstr ""
+"به یک جامعه حمایتی از دوندگان همفکر بپیوندید و با هم به اهداف خود برسید."
+
+#: templates/home.html:331
+msgid " be strong"
+msgstr "قوی باشید"
+
+#: templates/home.html:333
+msgid " Build resilience and mental toughness as you push your limits."
+msgstr ""
+"یانعطاف پذیری و استحکام ذهنی را در حالی که محدودیت های خود را پشت سر می "
+"گذارید، ایجاد کنید."
+
+#: templates/home.html:350
+msgid "running events"
+msgstr "مسابقات دوندگی"
+
+#: templates/home.html:351
+msgid "Running Events Coming Up include"
+msgstr "مسابقات دوندگی پیش رو"
+
+#: templates/home.html:353
+msgid "View all"
+msgstr "همه مسابقات"
+
+#: templates/home.html:413
+msgid "Ticke"
+msgstr "بلیط"
+
+#: templates/home.html:414
+msgid "$"
+msgstr "تومان"
+
+#: templates/home.html:453
+msgid ""
+"Running isn't just a sport—it's a journey, a test of will, and a celebration "
+"of the human spirit. Every step taken, every mile conquered, is a testament "
+"to your dedication, resilience, and passion"
+msgstr ""
+"دویدن فقط یک ورزش نیست، بلکه یک سفر، آزمایش اراده و تجلیل از روح انسان است. "
+"هر قدمی که برداشته می شود، هر مایل فتح شده، گواهی بر فداکاری، انعطاف پذیری و "
+"اشتیاق شماست"
+
+#: templates/home.html:473
+msgid ""
+"Every Run is a new story waiting to be written, a new challenge waiting to "
+"be conquered. Lace up your shoes, hit the pavement, and never give up. Your "
+"journey as a runner is  a testament to your strength, determination, and the "
+"pursuit of excellence. Keep moving forward, one step at a time, and embrace "
+"the run of a lifetime"
+msgstr ""
+"هر دویدن داستان جدیدی است که منتظر نوشته شدن است، چالش جدیدی که منتظر غلبه "
+"شدن است. کفش‌هایت را ببند، به خیابان برو و هرگز تسلیم نشو. سفرت به عنوان یک "
+"دونده، شاهکار قدرت، عزم و تلاش توست. به جلو حرکت کن، یک قدم به موقع، و "
+"لحظه‌های دویدن را در زندگیت بپذیر."
+
+#: templates/home.html:499
+msgid "Our Blogs"
+msgstr "بلاگ ها"
+
+#: templates/home.html:501
+#, fuzzy
+#| msgid "View all"
+msgid "View all Blogs"
+msgstr "همه مسابقات"
+
+#: templates/home.html:534 templates/home.html:557
+msgid "Read More"
+msgstr "بیشتر"
+
+#: templates/paralax.html:6
+msgid "Join Our Running Club..."
+msgstr "عضو گروه دوندگی ما شوید"
+
+#: templates/paralax.html:8
+msgid "coming soon..."
+msgstr "به زودی...."
+
+#: templates/teammember.html:7
+msgid "Our team"
+msgstr "تیم ما"
+
+#: templates/teammember.html:8
+msgid " our member, referee"
+msgstr "اعضای گروه ما ٬ داور های ما"
+
+#~ msgid "Contact us"
+#~ msgstr "تماس با ما"

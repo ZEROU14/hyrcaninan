@@ -1,0 +1,60 @@
+{% extends "_base.html" %}
+{% load crispy_forms_tags  %}
+{% load humanize %}
+{% load persian_tag %}
+{% load jalali_tags %}
+{% block page_title %}Event SignUp{% endblock page_title %}
+
+
+{% block content %}
+    <!-- Modal-login -->
+{% load i18n %}
+
+<div style="text-align: right;" class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <div class="tfre_login-form">
+
+            <div style="text-align: right;" class="card my-3 shadow">
+                <h2 class="card-header bg-success text-light">{% trans "Login for" %}  {{event.title}}</h2>
+                <div style="text-align: right;" class="card-body">
+                    <h6 class="card-text">
+                        لطفاً در وارد کردن اطلاعات خود کوشا باشید 
+                        زیرا اطلاعات وارد شده برای ثبت نام قابل تغییر نمی‌باشد 
+                        و مبلغ  {{event.price|intcomma:False|translate_number}}   تومان برای  ثبت نام در مسابقه را لطفاً به شماره کارت  به نام محمد نادرخانی {{6219861935818921|translate_number}} واریز نموده و عکس رسید را در فیلد مورد نظر آپلود نمایید
+                    </h6>
+                </div>
+            </div>
+
+            <div class="error_message tfre_message"></div>
+            <form class="tfre_login" method="post" enctype="multipart/form-data" id="tfre_custom-login-form">
+                
+                <div class="container">
+                    <div class="col-8">
+
+                    </div>
+                   
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                       
+                    <input type="hidden" name="action" value="tfre_login_ajax">
+                    <button type="submit" class="flat-button">{% trans "Sign Up" %} </button>
+                    
+                        
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+    <!-- events_signup.html -->
+{% comment %} 
+<h1>Sign Up for Event {{ event.title }}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+ {% endcomment %}
+
+{% endblock content %}

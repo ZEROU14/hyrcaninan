@@ -1,0 +1,63 @@
+{% load static %}
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+
+
+<header id="header" class="header style1 clearfix">
+    <div class="themeflat-container">
+        <div class="header-inner">
+            <div id="logo" class="logo">
+                <a href="#" rel="home">
+                    <img id="a2" src="{% static 'images/logos3.png' %}" alt="image">
+                </a>
+            </div><!-- /.logo -->
+            <div class="nav-wrap">
+                <div class="btn-menu">
+                    <i class="bi bi-list"></i>
+                    <span class="icon-menu"></span>
+                </div><!-- //mobile menu button -->
+                <nav id="mainnav" class="mainnav">
+                    <div id="logo-mobie" class="logo">
+                        <a href="#" rel="home">
+                            <img  src="{% static 'images/logos3.png' %}" alt="image">
+                        </a>
+                    </div><!-- /.logo -->
+                    <ul class="menu">
+                        <li>
+                            <a href="{% url "home" %}">{% trans "Home page" %} </a>
+                       
+                        </li>
+                        <li><a href="{% url "aboutus" %}">{% trans "About us" %} </a></li>
+                        <li><a href="{% url "events_list" %}">{% trans "Our Events" %} </a>
+                        </li>
+
+                        <li><a href="{% url "blogs" %}">{% trans "Latest Blogs" %} </a>
+                        </li>
+                        <li><a href="#">{% trans "Shop" %} </a>
+                            <ul class="submenu">
+                                <li><a href="#">{% trans "Comming Soon..." %} </a></li>
+                            </ul><!-- /.submenu -->
+                        </li>
+                        <li><a href="#">{% trans "Contact Us" %} </a>
+                            <ul class="submenu">
+                                <li><a href="#">09373411651</a></li>
+                            </ul><!-- /.submenu -->
+                        </li>
+                    </ul><!-- /.menu -->
+                </nav><!-- /.mainnav -->
+            </div><!-- /.nav-wrap -->
+            <!-- Example single danger button -->
+          
+            {% comment %} <div class="header-right">       
+                <a href="contact.html" class="btn-contact">{% trans "Contact Us" %} </a>
+                <!-- /.login/register -->
+            </div><!-- /.login-wrap --> {% endcomment %}
+        </div><!-- /.header-inner -->
+    </div>
+  
+    <!--car-box-->
+   
+
+    <!--car-box-->
+</header><!-- /.header -->

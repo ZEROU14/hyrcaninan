@@ -1,0 +1,36 @@
+    <!-- Widget-about -->
+ {% load static %}
+ {% load i18n %}
+    <div class="tf-widget-about-us main-content">
+        <div class="themeflat-container">
+            <div class="tf-about-us">
+                <div class="row">
+                    <div class="col-md-6 image-wraper">
+                        <div class="media">
+                            <div class="media-v1">
+                                {% comment %} <img class="mask-media wow fadeInLeft animated" src="images/about/mask1.png"
+                                    alt="image"> {% endcomment %}
+                                    <img class="shape-media" src="{% static 'images/33.png' %}" alt="image">
+                            </div>
+                            <img src="{% static 'images/27.png' %}" alt="image" class="image-gr wow fadeInRight animated">
+                            <img src="{% static 'images/28.png' %}" alt="image" class="intersect-img">
+                        </div>
+                    </div>
+                    <div style="text-align: right;" class="col-md-6">
+                        <div class="about-box">
+                            <img src="{% static 'images/77.png' %}" alt="image shape">
+                            <!-- header style v1 -->
+                            <div class="title-box title-small-v2">
+                                <span class="sub-title wow fadeInUp animated">{% trans "Welcome to runclub!" %} </span>
+                                <h2 class="title-section wow fadeInUp animated">{% trans "Zunzo - Your Ultimate Running Community" %} 
+                                </h2>
+                            </div ><!-- header style v1 -->
+                            <p style="text-align: right;" class="post wow fadeInUp animated">{{aboutus.whatis_runclub|safe}}</p>
+                            <div class="line"></div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Widget-about  -->

@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+{% load persian_tag %}
+{% load i18n %}
+{% load humanize %}
+{% block page_title %} Sign Up Detail{% endblock page_title %}
+
+
+{% block content %}
+    {% include "header.html" %}
+<!-- signup_detail.html -->
+{% trans "" %}
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <h3>{% trans "Your Signup Details" %} </h3>
+        <h6 style="text-align: right;" ><strong>{% trans "Name: " %}</strong> {{ signup.name }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "Last Name: " %}</strong> {{ signup.last_name }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "Phone Number: " %}</strong> {{ signup.phone_number }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "Category: " %}</strong> {{ signup.get_category_display }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "Event: " %}</strong> {{ signup.event.title }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "Price: " %}</strong> {{ signup.event.price|intcomma:False|translate_number }}</h6>
+        <h6 style="text-align: right;"><strong>{% trans "ID Picture: " %}</strong> <img src="{{ signup.Id_pic.url }}" alt="ID Picture"></h6>
+        <h6 style="text-align: right;"><strong>{% trans "Insurance Picture: " %}</strong> <img src="{{ signup.insurance_pic.url }}" alt="Insurance Picture"></h6>
+        <h6 style="text-align: right;"><strong>{% trans "pay_pic: " %}</strong> <img src="{{ signup.paid_pic.url }}" alt="paid_pic"></h6>
+
+        <button  type="submit" class="flat-button"> <a href="{% url 'home' %}">{% trans "home" %} </a>  </button>
+
+    </div>
+</div>
+        
+      
+
+
+</div>
+   
+{% endblock content %}

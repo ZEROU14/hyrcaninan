@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% load humanize %}
+<html lang="en">
+<head>
+    <head>
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title>{% block page_title %}{% endblock  %}</title>
+    
+        <meta name="author" content="themesflat.com">
+    
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+       
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap.rtl.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-reboot.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-utilities.rtl.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-utilities.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-reboot.rtl.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/bootstrap-grid.rtl.min.css' %}">
+    
+        <!-- Theme Style -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/style.css' %}">
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/shortcodes.css' %}">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Responsive -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/responsive.css' %}">
+    
+        <!-- Colors -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/colors/color1.css' %}" id="colors">
+    
+        <!-- Carousel -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/owl.carousel.css' %}">
+    
+        <!-- Animation Style -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/animate.css' %}">
+    
+        <!-- Wow JS -->
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/animate.min.css' %}">
+    
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/swiper-bundle.min.css' %}">
+    
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/magnific-popup.min.css' %}">
+    
+        <link rel="stylesheet" type="text/css" href=" {% static 'stylesheets/map.min.css' %}">
+    
+        <!-- Favicon and touch icons  -->
+        <link href=" {% static 'images/icon/favicon.png' %}" rel="apple-touch-icon-precomposed" sizes="48x48">
+        <link href=" {% static 'images/icon/favicon.png' %}" rel="apple-touch-icon-precomposed">
+        <link href=" {% static 'images/icon/favicon.png' %}" rel="shortcut icon">
+    
+        
+        
+        {% block style %}{% endblock style %}
+    </head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="header-sticky">
+    {% if messages %}
+    <div class="container">
+        {% for message in messages %}
+        <div class = 'alert alert-{{message.tags}}' role="alert">
+            {{message}}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <!-- preload -->
+ 
+    <!-- /preload -->
+     {% block content %}{% endblock  %}
+
+
+    <!-- Header -->
+  
+    <!-- /.header -->
+
+
+ 
+    <!-- Footer -->
+    <footer class="footer background-black">
+        <div class="footer-widgets">
+            <div class="themeflat-container">
+                <div class="row footer-top">
+                    <div class="col-xxl-4 col-lg-4 col-xl-4 col-md-12 logo-footer">
+                        <div class="widget">
+                            <div class="textwidget">
+                                <img id="a1" src="images/logo-footer.png" alt="images">
+                                <p>{% trans "Welcome to our running community! Discover the joy of running, connect with fellow enthusiasts, and unlock your full potential with our expert resources and training programs." %} 
+                                </p>
+                                <div class="social-icon-footer">
+                                    <a href="facebook.com"><i class="icon-facebook"></i></a>
+                                    <a href="linkedin.com"><i class="icon-linkedin2"></i></a>
+                                    <a href="icon-twitter.com"><i class="icon-twitter"></i></a>
+                                    <a href="instagram.com"><i class="icon-instagram"></i></a>
+                                    <a href="youtube.com"><i class="icon-youtube"></i></a>
+
+
+                                </div>
+                            </div>
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-xxl-4 col-lg-4 col-xl-4 col-md-6 link-footer">
+                        
+                        <div class="widget widget_menu-footer">
+                            <ul class="menu-footer">
+                                <li><a href="#">{% trans "Blogs" %} </a></li>
+                                <li><a href="{% url "events_list" %}">{% trans "Events" %} </a></li>
+                                <li><a href="{% url "aboutus" %}">{% trans " About Us" %}</a></li>
+                            </ul><!-- /.menu -->
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-4 -->
+
+                    <div class="col-xxl-4 col-lg-4 col-xl-4 col-md-6 new-letter">
+                        <div class="widget widget_text widget_menu-footer">
+                            <div class="menu-footer">
+                                <div class="text-phone">
+                                   
+                                    <div class="address">
+                                        <p>{% trans " Need help?" %} </p>
+                                        <span>0937 341 1651</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-4 -->
+
+                </div><!-- /.row -->
+                <div class="row footer-bottom">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="copyright">
+                            <p>©2024 <a href="{% url "home" %}" target="_blank"> Hyricani</a> All Rights Reserved.
+                            </p>
+                        </div>
+                    </div><!-- /.col-md-6 -->
+                    <div class="col-md-6 col-sm-12">
+                        <ul class="link-footer-bottom">
+                            <li><a href="#">Terms Of Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul><!-- /.menu -->
+                    </div><!-- /.col-md-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.footer-widgets -->
+    </footer>
+
+    <!-- Go Top -->
+    <a class="go-top">
+        <i class="icon-ctrl"></i>
+    </a>
+    <!-- Modal-login -->
+
+    <!-- Modal-login -->
+
+       <!-- modal find_size -->
+
+    <!-- /modal find_size -->
+    <!-- modal quick_view -->
+  
+    <!-- /modal quick_view -->
+    <!-- compare -->
+  
+
+    <!-- /compare -->
+    <script src=" {% static 'javascript/html5shiv.js' %} "></script>
+    <script src="{% static 'javascript/respond.min.js' %} "></script>
+    <script type="text/javascript" src="{% static 'javascript/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/jquery.cookie.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/swiper-bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/owl.carousel.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/count-down.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/magnific-popup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/map.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/map.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/jquery-waypoints.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/jquery-countTo.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
+</body>
+
+</html>
+
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+
+
